@@ -1,8 +1,8 @@
 # Cache Test
 
-<http://github.com/ferblape/cache_test>
+Original repository: <http://github.com/ferblape/cache_test>
 
-A plugin for testing generation and expiration of action cache and fragment cached. Based on [cache test plugin](http://blog.cosinux.org/pages/page-cache-test)
+A plugin for testing generation and expiration of page cacge, action cache and fragment cached. Based on [cache test plugin](http://blog.cosinux.org/pages/page-cache-test) and [relevance-cache_test](http://github.com/relevance/cache_test/tree/master)
 
 
 ## Example of usage
@@ -16,6 +16,22 @@ You can use all the new asserts in functional tests, in this way:
 
 
 ## List of asserts
+
+### Testing page cache
+
+#### Generation
+
+  - `assert_cache_page`
+  - `assert_cache_pages`
+  - `assert_not_cache_page`
+  - `assert_not_cache_pages`
+
+#### Expiration
+
+  - `assert_expire_page`
+  - `assert_expire_pages`
+  - `assert_not_expire_page`
+  - `assert_not_expire_pages`
 
 ### Testing action cache
 
@@ -48,6 +64,10 @@ You can use all the new asserts in functional tests, in this way:
   - `assert_expire_cache_fragments`
   - `assert_not_expire_cache_fragment`
   - `assert_not_expire_cache_fragments`
+  
+## Fork Notes
+
+This version mixes the action cache and fragment cache assertions with the page cache assertions from [relevance-cache_test](http://github.com/relevance/cache_test/tree/master).
 
 ## About
 
